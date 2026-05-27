@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.secondlife.mobile.ui.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action android:id="@+id/action_dashboard_to_customers"
+            app:destination="@id/nav_customers" />
+        <action android:id="@+id/action_dashboard_to_jobs"
+            app:destination="@id/nav_jobs" />
+        <action android:id="@+id/action_dashboard_to_parts"
+            app:destination="@id/nav_parts" />
+        <action android:id="@+id/action_dashboard_to_bills"
+            app:destination="@id/nav_bills" />
+        <action android:id="@+id/action_dashboard_to_inventory"
+            app:destination="@id/nav_inventory" />
+        <action android:id="@+id/action_dashboard_to_technicians"
+            app:destination="@id/nav_technicians" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_customers"
+        android:name="com.secondlife.mobile.ui.CustomersFragment"
+        android:label="Customers"
+        tools:layout="@layout/fragment_customers" />
+
+    <fragment
+        android:id="@+id/nav_jobs"
+        android:name="com.secondlife.mobile.ui.RepairJobsFragment"
+        android:label="Repair Jobs"
+        tools:layout="@layout/fragment_jobs" />
+
+    <fragment
+        android:id="@+id/nav_parts"
+        android:name="com.secondlife.mobile.ui.SparePartsFragment"
+        android:label="Spare Parts"
+        tools:layout="@layout/fragment_parts" />
+
+    <fragment
+        android:id="@+id/nav_bills"
+        android:name="com.secondlife.mobile.ui.BillsFragment"
+        android:label="Bills"
+        tools:layout="@layout/fragment_bills" />
+
+    <fragment
+        android:id="@+id/nav_inventory"
+        android:name="com.secondlife.mobile.ui.InventoryFragment"
+        android:label="Inventory"
+        tools:layout="@layout/fragment_inventory" />
+
+    <fragment
+        android:id="@+id/nav_technicians"
+        android:name="com.secondlife.mobile.ui.TechniciansFragment"
+        android:label="Technicians"
+        tools:layout="@layout/fragment_technicians" />
+
+</navigation>

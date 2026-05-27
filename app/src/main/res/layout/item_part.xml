@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/brand_surface_card"
+    app:strokeColor="@color/brand_divider"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_part_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Part Name"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/brand_on_surface"/>
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textSize="11sp"
+                    android:textColor="@color/brand_on_surface_muted"/>
+                <TextView
+                    android:id="@+id/tv_compatible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All models"
+                    android:textSize="11sp"
+                    android:textColor="@color/brand_on_surface_muted"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_menu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_more"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/brand_on_surface_muted"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Qty: 0"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/brand_primary"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="₹0 / ₹0"
+                android:textSize="11sp"
+                android:textColor="@color/brand_on_surface_muted"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_remove"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="36dp"
+                android:layout_height="32dp"
+                android:text="-"
+                android:textSize="16sp"
+                android:layout_marginEnd="4dp"
+                app:strokeColor="@color/brand_divider"
+                android:textColor="@color/brand_on_surface_muted"/>
+
+            <TextView
+                android:id="@+id/tv_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:textSize="10sp"
+                android:textColor="@color/brand_on_surface_muted"
+                android:layout_marginEnd="4dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_add"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="36dp"
+                android:layout_height="32dp"
+                android:text="+"
+                android:textSize="16sp"
+                app:strokeColor="@color/brand_primary"
+                android:textColor="@color/brand_primary"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

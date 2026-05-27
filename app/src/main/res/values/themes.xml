@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MobileService" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/brand_primary_dark</item>
+        <item name="colorOnPrimary">@color/brand_surface</item>
+        <item name="colorSecondary">@color/brand_primary</item>
+        <item name="colorOnSecondary">@color/brand_surface</item>
+        <item name="colorSurface">@color/brand_surface_card</item>
+        <item name="colorOnSurface">@color/brand_on_surface</item>
+        <item name="android:colorBackground">@color/brand_surface</item>
+        <item name="colorOnBackground">@color/brand_on_surface</item>
+        <item name="colorError">@color/material_dynamic_error</item>
+        <item name="colorOnError">@color/brand_surface</item>
+        <item name="android:statusBarColor">@color/brand_surface</item>
+        <item name="android:navigationBarColor">@color/brand_surface_card</item>
+        <!-- FAB style -->
+        <item name="floatingActionButtonStyle">@style/FabStyle</item>
+        <!-- Card style -->
+        <item name="materialCardViewStyle">@style/CardStyle</item>
+        <!-- Bottom nav -->
+        <item name="bottomNavigationStyle">@style/BottomNavStyle</item>
+    </style>
+
+    <style name="FabStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/brand_primary</item>
+        <item name="tint">@color/brand_surface</item>
+    </style>
+
+    <style name="CardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/brand_surface_card</item>
+        <item name="cardCornerRadius">14dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/brand_divider</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="BottomNavStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/brand_surface_card</item>
+        <item name="itemIconTint">@drawable/bottom_nav_color</item>
+        <item name="itemTextColor">@drawable/bottom_nav_color</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+</resources>

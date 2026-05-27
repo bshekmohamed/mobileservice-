@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Labour Charge (₹)" android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/et_labor"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Spare Parts Charge (₹)" android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/et_parts"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Discount (₹)" android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/et_discount"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:id="@+id/tv_total" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Total: ₹0"
+            android:textSize="16sp" android:textStyle="bold" android:textColor="#84CC16"
+            android:layout_marginBottom="8dp" android:padding="8dp"
+            android:background="#F1F8E9"/>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Amount Paid (₹)" android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/et_paid"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Payment Mode" android:textSize="13sp" android:textColor="#666"
+            android:layout_marginBottom="4dp"/>
+        <RadioGroup android:id="@+id/rg_payment" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/rb_cash" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Cash" android:checked="true"
+                android:layout_marginEnd="24dp"/>
+            <RadioButton android:id="@+id/rb_upi" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="UPI"/>
+            <RadioButton android:id="@+id/rb_card" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Card" android:layout_marginStart="24dp"/>
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Second Life Mobiles</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_jobs">Repair Jobs</string>
+    <string name="title_inventory">Inventory</string>
+    <string name="title_customers">Customers</string>
+</resources>

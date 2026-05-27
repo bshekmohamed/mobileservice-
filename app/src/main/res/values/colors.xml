@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="brand_primary">#84CC16</color>       <!-- Lime green accent -->
+    <color name="brand_primary_dark">#65A30D</color>
+    <color name="brand_surface">#0F172A</color>        <!-- Deep navy background -->
+    <color name="brand_surface_card">#1E293B</color>   <!-- Card surface -->
+    <color name="brand_surface_elevated">#263548</color>
+    <color name="brand_on_surface">#F1F5F9</color>     <!-- Primary text -->
+    <color name="brand_on_surface_muted">#94A3B8</color> <!-- Secondary text -->
+    <color name="brand_divider">#2D3F55</color>
+
+    <!-- Status Colors -->
+    <color name="status_received">#F59E0B</color>
+    <color name="status_in_progress">#3B82F6</color>
+    <color name="status_completed">#22C55E</color>
+    <color name="status_delivered">#6B7280</color>
+
+    <!-- Grade Colors -->
+    <color name="grade_aplus">#16A34A</color>
+    <color name="grade_a">#22C55E</color>
+    <color name="grade_bplus">#EA580C</color>
+    <color name="grade_b">#DC2626</color>
+
+    <!-- Material dynamic fallbacks -->
+    <color name="material_dynamic_primary">#84CC16</color>
+    <color name="material_dynamic_on_primary">#0F172A</color>
+    <color name="material_dynamic_primary_container">#1E293B</color>
+    <color name="material_dynamic_on_primary_container">#F1F5F9</color>
+    <color name="material_dynamic_secondary">#94A3B8</color>
+    <color name="material_dynamic_on_secondary">#0F172A</color>
+    <color name="material_dynamic_secondary_container">#1E293B</color>
+    <color name="material_dynamic_on_secondary_container">#F1F5F9</color>
+    <color name="material_dynamic_tertiary">#38BDF8</color>
+    <color name="material_dynamic_on_tertiary">#0F172A</color>
+    <color name="material_dynamic_tertiary_container">#1E293B</color>
+    <color name="material_dynamic_on_tertiary_container">#F1F5F9</color>
+    <color name="material_dynamic_error">#F87171</color>
+    <color name="material_dynamic_on_error">#0F172A</color>
+    <color name="material_dynamic_error_container">#7F1D1D</color>
+    <color name="material_dynamic_on_error_container">#FECACA</color>
+    <color name="material_dynamic_background">#0F172A</color>
+    <color name="material_dynamic_on_background">#F1F5F9</color>
+    <color name="material_dynamic_surface">#0F172A</color>
+    <color name="material_dynamic_on_surface">#F1F5F9</color>
+</resources>
